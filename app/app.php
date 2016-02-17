@@ -9,6 +9,6 @@
     ));
 
     $app->get("/", function() use ($app) {
-      return $app['twig']->render('player_wins.html.twig')
+      return $app['twig']->render('play_form.html.twig')
     })
  ?>
