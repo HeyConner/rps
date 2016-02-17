@@ -9,6 +9,14 @@
     ));
 
     $app->get("/", function() use ($app) {
-      return $app['twig']->render('play_form.html.twig')
-    })
+      return $app['twig']->render('play_form.html.twig';
+    });
+
+    $app->post("/player_wins", function( use ($app)
+    {
+      $newGame = new RPS;
+      $results = $newGame->playRps($_POST[''],$_POST[''])
+    }));
+
+      return $app;
  ?>
